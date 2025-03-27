@@ -244,6 +244,7 @@ export default function Home() {
                 <Image
                   src="/kit.svg"
                   alt="Aqylab kit"
+                  priority
                   width={250}
                   height={250}
                   className="object-contain w-32 h-32 md:w-48 md:h-48"
