@@ -6,6 +6,15 @@ import Link from "next/link"
 import { ArrowRight, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react"
 import { ContactModal } from "@/components/contact-modal"
 
+const scrollToSection = (e: React.MouseEvent, id: string) => {
+  e.preventDefault()
+  const element = document.getElementById(id)
+  element?.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  })
+}
+
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -28,13 +37,13 @@ export default function Home() {
             />
           </Link>
           <nav className="hidden md:flex items-center space-x-6">
-            <Link href="/" className="text-black hover:text-purple-500 transition-colors">
+            <Link href="#analyzer" onClick={(e) => scrollToSection(e, 'analyzer')} className="text-black hover:text-purple-500 transition-colors">
               Анализатор
             </Link>
-            <Link href="/" className="text-black hover:text-purple-500 transition-colors">
+            <Link href="#papers" onClick={(e) => scrollToSection(e, 'papers')} className="text-black hover:text-purple-500 transition-colors">
               Рабочие листы
             </Link>
-            <Link href="/" className="text-black hover:text-purple-500 transition-colors">
+            <Link href="#ai-assistant" onClick={(e) => scrollToSection(e, 'ai-assistant')} className="text-black hover:text-purple-500 transition-colors">
               ИИ-Ассистент
             </Link>
             <button
@@ -88,7 +97,7 @@ export default function Home() {
         {/* Product Cards */}
         <section className="container mx-auto px-4 py-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-gray-50 p-6 rounded-lg">
+            <div id="analyzer" className="bg-gray-50 p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-2">Химический анализатор</h3>
               <p className="text-gray-600 mb-6">Анализатор с 14 датчиками позволяет ученику понять материал наглядно с помощью визуализации данных</p>
               <div className="flex justify-between items-center">
@@ -108,7 +117,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg">
+            <div id="papers" className="bg-gray-50 p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-2">Рабочие листы</h3>
               <p className="text-gray-600 mb-6">Рабочие листы с красочными иллюстрациями добавляют интерес ученикам</p>
               <div className="flex justify-between items-center">
@@ -128,7 +137,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg">
+            <div id="ai-assistant" className="bg-gray-50 p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-2">ИИ-Ассистент</h3>
               <p className="text-gray-600 mb-6">Приложение со встроенным ИИ-помощником полностью сопровождает ученика во время проведения эксперимента</p>
               <div className="flex justify-between items-center">
@@ -158,7 +167,7 @@ export default function Home() {
               <p className="text-xl">проводит наш набор</p>
             </div>
             <div className="p-4 text-center">
-              <h3 className="text-3xl font-bold">+5 000</h3>
+              <h3 className="text-3xl font-bold">+ 5 000</h3>
               <p className="text-xl">активных пользователей</p>
             </div>
             <div className="p-4 text-center">
