@@ -311,7 +311,7 @@ export default function Home() {
               </div>
               <div className="bg-white p-6 rounded-lg text-center shadow-sm">
                 <h3 className="text-3xl font-bold text-purple-600 mb-2">7</h3>
-                <p className="text-lg">школ в Казахстане</p>
+                <p className="text-lg">довольных школ в Казахстане</p>
               </div>
             </div>
           </div>
