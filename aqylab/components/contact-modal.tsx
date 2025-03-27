@@ -44,12 +44,12 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
         </button>
 
         <div className="p-6">
-          <h2 className="text-2xl font-semibold mb-6">Leave a request and we will contact you</h2>
+          <h2 className="text-2xl font-semibold mb-6">Оставьте заявку и мы свяжемся с вами</h2>
 
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label htmlFor="fullName" className="block text-gray-700 mb-2">
-                Full name
+                Ваше имя
               </label>
               <input
                 type="text"
@@ -65,7 +65,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
             <div className="mb-4">
               <label htmlFor="phoneNumber" className="block text-gray-700 mb-2">
-                Phone number
+                Номер телефона
               </label>
               <input
                 type="tel"
@@ -78,10 +78,10 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
-
+{/*
             <div className="mb-6">
               <label htmlFor="country" className="block text-gray-700 mb-2">
-                Country
+                Страна
               </label>
               <div className="relative">
                 <select
@@ -93,19 +93,16 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-purple-500"
                 >
                   <option value="" disabled>
-                    Select your country
+                    Выберите страну
                   </option>
                   <option value="Kazakhstan">Kazakhstan</option>
-                  <option value="Uzbekistan">Uzbekistan</option>
-                  <option value="Azerbaijan">Azerbaijan</option>
-                  <option value="South Korea">South Korea</option>
                   <option value="Other">Other</option>
                 </select>
                 <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                   <ChevronDown className="h-5 w-5 text-gray-400" />
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <button
               type="submit"
