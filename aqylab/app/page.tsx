@@ -102,7 +102,7 @@ export default function Home() {
               <p className="text-gray-600 mb-6">Анализатор с 14 датчиками позволяет ученику понять материал наглядно с помощью визуализации данных</p>
               <div className="flex justify-between items-center">
                 <Link
-                  href="/"
+                  href="/#analyzer"
                   className="p-2 rounded-full border border-gray-200 hover:bg-gray-100 transition-colors"
                 >
                   <ArrowRight className="h-5 w-5" />
@@ -122,7 +122,7 @@ export default function Home() {
               <p className="text-gray-600 mb-6">Рабочие листы с красочными иллюстрациями добавляют интерес ученикам</p>
               <div className="flex justify-between items-center">
                 <Link
-                  href="/"
+                  href="/#papers"
                   className="p-2 rounded-full border border-gray-200 hover:bg-gray-100 transition-colors"
                 >
                   <ArrowRight className="h-5 w-5" />
@@ -142,7 +142,7 @@ export default function Home() {
               <p className="text-gray-600 mb-6">Приложение со встроенным ИИ-помощником полностью сопровождает ученика во время проведения эксперимента</p>
               <div className="flex justify-between items-center">
                 <Link
-                  href="/"
+                  href="/#ai-assistant"
                   className="p-2 rounded-full border border-gray-200 hover:bg-gray-100 transition-colors"
                 >
                   <ArrowRight className="h-5 w-5" />
